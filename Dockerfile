@@ -8,6 +8,7 @@ ENV GOOS=linux \
     GOARCH=amd64 \
     GOPATH=/opt/go \
     CGO_ENABLED=0 \
+    LC_ALL=en_US.UTF-8 \
+    LANG=en_US.UTF-8 \
     PATH=/usr/local/go/bin/:$PATH
 
-ENTRYPOINT ["/usr/local/go/bin/go"]
